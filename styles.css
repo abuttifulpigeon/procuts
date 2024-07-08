@@ -282,13 +282,17 @@ main .main-header {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
     margin-top: 20px;
-    font-weight: bolder;
+    font-weight: bold;
 }
 .service-item, .product-item {
-    background: rgb(42, 71, 165);
-    background: radial-gradient(circle, rgba(165,42,42,1) 0%, rgba(17,17,17,1) 100%);
+    background: rgb(165,42,42);
+    background: radial-gradient(45deg, rgba(165,42,42,1) 0%, rgba(17,17,17,1) 100%);
     padding: 20px;
     border-radius: 5px;
+}
+
+.product-item {
+    background: radial-gradient(160deg, rgba(165,42,42,1) 0%, rgba(17,17,17,1) 100%);
 }
 
 section p {
