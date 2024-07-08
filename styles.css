@@ -292,7 +292,7 @@ main .main-header {
 }
 
 .product-item {
-    background: linear-gradient(160deg, rgba(165,42,42,1) 0%, rgba(17,17,17,1) 100%);
+    background: linear-gradient(45deg, rgba(17,17,17,1) 0%, rgba(165,42,42,1) 100%);
 }
 
 section p {
