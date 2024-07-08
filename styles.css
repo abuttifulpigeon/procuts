@@ -286,13 +286,9 @@ main .main-header {
 }
 .service-item, .product-item {
     background: rgb(165,42,42);
-    background: linear-gradient(45deg, rgba(165,42,42,1) 0%, rgba(17,17,17,1) 100%);
+    background: radial-gradient(circle, rgba(165,42,42,1) 0%, rgba(17,17,17,1) 100%);
     padding: 20px;
     border-radius: 5px;
-}
-
-.product-item {
-    background: linear-gradient(45deg, rgba(17,17,17,1) 0%, rgba(165,42,42,1) 100%);
 }
 
 section p {
