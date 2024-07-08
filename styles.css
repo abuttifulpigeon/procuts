@@ -285,7 +285,7 @@ main .main-header {
     font-weight: bolder;
 }
 .service-item, .product-item {
-    background: rgb(165,42,42);
+    background: rgb(42, 71, 165);
     background: radial-gradient(circle, rgba(165,42,42,1) 0%, rgba(17,17,17,1) 100%);
     padding: 20px;
     border-radius: 5px;
