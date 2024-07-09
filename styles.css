@@ -36,7 +36,7 @@ a:hover {
 
 .hero-content {
     background-color: rgba(0, 0, 0, 0.7);
-    padding: 40px;
+    padding: 0 40px 40px;
 }
 
 @font-face {
