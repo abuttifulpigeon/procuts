@@ -14,6 +14,15 @@ body, html {
     
 }
 
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 .hero {
     display: flex;
     justify-content: center;
@@ -39,10 +48,6 @@ h1 {
     margin-bottom: 20px;
     font-size: 2.5em;
     font-family: "Universal Serif";
-    color: white;
-}
-
-a {
     color: white;
 }
 
@@ -286,7 +291,7 @@ main .main-header {
 }
 .service-item, .product-item {
     background: rgb(165,42,42);
-    background: radial-gradient(circle, rgb(65, 42, 165) 0%, rgba(17,17,17,1) 100%);
+    background: radial-gradient(circle, rgba(165,42,42,1) 0%, rgba(17,17,17,1) 100%);
     padding: 20px;
     border-radius: 5px;
 }
