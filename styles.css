@@ -11,7 +11,7 @@ body, html {
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--header-color);
     color: white;
-    
+    font-size: large;    
 }
 
 a {
@@ -202,6 +202,21 @@ main .main-header {
     display: flex;
 }
 
+.container-lvl2 img {
+    border-radius: 15px;
+    margin: 20px;
+}
+
+.container-lvl3 {
+    flex-direction: column;
+    margin-left: 20px;
+    
+}
+
+.container-lvl3 p {
+    font-size: large;
+}
+
 .store-text {
     margin: 20px;
     padding: 10px;
@@ -316,6 +331,54 @@ footer {
     text-align: left;
     align-self: start;
     width: 100%;
+}
+
+#differences {
+    background-color: #a52a2a;
+    padding: 40px 0;
+}
+  
+#differences h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+  
+.text-container {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+.text-column {
+   flex: 1;
+   text-align: left;
+}
+
+.text-column p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.about-header {
+    height: 256px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2b2b2b;
+}
+
+.about-header p {
+    margin: 20px 200px;
+}
+
+@media (max-width: 768px) {
+    .text-container {
+      flex-direction: column;
+    }
 }
 
 @media (max-width: 768px) {
