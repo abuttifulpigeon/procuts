@@ -30,7 +30,7 @@ a:hover {
     text-align: center;
     background-image: url(/assets/img/haircuts/haircut-1.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: left;
     height: 400px;
 }
 
@@ -452,6 +452,66 @@ footer {
         text-align: center;
     }
 }
+
+@media (max-width: 768px) {
+    .section {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .container-lvl2 {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .container-lvl2 img {
+        max-width: 100%;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    .container-lvl3 {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .about-header {
+        height: auto;
+        padding: 20px;
+    }
+
+    .about-header p {
+        margin: 20px;
+    }
+
+    .container {
+        margin: 20px !important;
+        font-size: x-large;
+    }
+
+    h1, h2 {
+        font-size: 1.5em;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 32px 20px;
+    }
+}
+
+/* Additional media query for smaller screens */
+@media (max-width: 480px) {
+    .container {
+        font-size: large;
+    }
+
+    h1, h2 {
+        font-size: 1.2em;
+    }
+}
+
 
 @media (max-width: 480px) {
     .store {
