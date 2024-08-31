@@ -28,7 +28,18 @@ a:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url(/assets/img/salon-bg.jpg);
+    background-image: url(/assets/img/haircuts/haircut-1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+}
+
+.hero-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(/assets/img/haircuts/haircut-wide-1.jpg);
     background-size: cover;
     background-position: center;
     height: 400px;
@@ -181,7 +192,6 @@ main .main-header {
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
-    
 }
 
 .store p {
@@ -379,11 +389,67 @@ footer {
     .text-container {
       flex-direction: column;
     }
+
+    .service-item {
+        width: 128px;
+    }
+
+    .product-item {
+        width: 128px;
+    }
+
+    .navbar {
+        justify-content: center;
+    }
 }
 
 @media (max-width: 768px) {
-    .store {
-        flex-basis: calc(50% - 20px);
+    .section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .opening-content {
+        margin: 20px 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .opening-content img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .opening-content p {
+        align-self: center;
+    }
+
+    #about .opening-content {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #about div[style*="margin-left: 100px"] {
+        margin-left: 20px !important;
+        margin-right: 20px !important;
+        text-align: center;
+        align-items: center;
+    }
+
+    #about h1 {
+        text-align: right;
+    }
+
+    #about p {
+        text-align: center;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    #about .cta-btn {
+        display: block;
+        margin: 0;
+        text-align: center;
     }
 }
 
@@ -405,6 +471,18 @@ footer {
     nav a {
         padding: 5px 8px;
         font-size: 14px;
+    }
+    
+    
+}
+
+@media (max-width: 1200px) {
+    .section {
+        flex-direction: column;
+    }
+
+    .section div {
+        justify-self: center;
     }
 }
 
