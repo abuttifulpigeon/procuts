@@ -45,18 +45,18 @@ a:hover {
     height: 400px;
 }
 
-.hero-services {
+.hero-alt {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url(/assets/img/haircuts/haircut-wide-1.jpg);
+    background-image: url(/assets/img/products/shampoos.jpg);
     background-size: cover;
     background-position: center;
     height: 400px;
 }
 
-.hero-services .hero-content {
+.hero-services .hero-content, .hero-alt .hero-content {
     padding: 0 40px 10px;
 }
 
@@ -551,7 +551,6 @@ footer {
     }
 }
 
-/* Additional media query for smaller screens */
 @media (max-width: 480px) {
     .container {
         font-size: large;
