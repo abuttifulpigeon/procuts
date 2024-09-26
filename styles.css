@@ -28,32 +28,21 @@ a:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url(/assets/img/haircuts/haircut-1.jpg);
     background-size: cover;
     background-position: left;
     height: 400px;
 }
 
-.hero-2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-image: url(/assets/img/haircuts/haircut-wide-1.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 400px;
+.hero-img-main {
+    background-image: url(/assets/img/haircuts/haircut-1.jpg);
 }
 
-.hero-alt {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+.footer-img-about {
+    background-image: url(/assets/img/haircuts/haircut-wide-1.jpg);
+}
+
+.hero-img-products {
     background-image: url(/assets/img/products/shampoos.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 400px;
 }
 
 .hero-services .hero-content, .hero-alt .hero-content {
