@@ -437,7 +437,7 @@ footer {
 .slideshow-container img {
     height: 500px;  /* You can adjust the height value */
     width: auto;    /* Maintain aspect ratio */
-    object-fit: cover;  /* Ensure the image covers the area while maintaining aspect ratio */
+    object-fit: contain;  /* Ensure the image covers the area while maintaining aspect ratio */
 }
 
 /* Next & previous buttons */
