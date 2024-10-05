@@ -605,6 +605,28 @@ footer {
     }
 }
 
+@media (max-width: 768px) {
+    .navbar-items {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .navbar-items ul {
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .navbar-items li {
+        padding: 5px 0;
+    }
+
+    nav a {
+        display: block;
+        text-align: center;
+        padding: 10px 0;
+    }
+}
 @media (max-width: 480px) {
     .container {
         font-size: large;
