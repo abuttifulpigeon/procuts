@@ -488,6 +488,14 @@ footer {
     background-color: #717171;
 }
 
+.prices {
+    display: flex;
+    gap: 20px;
+}
+
+.prices div {
+    width: 100%;
+}
 
 @media (max-width: 768px) {
     .text-container {
