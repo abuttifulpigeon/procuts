@@ -731,6 +731,12 @@ footer {
         text-align: center;
         padding: 32px 20px;
     }
+
+    .coupon-popup.expanded {
+        width: max-content;
+        height: auto;
+        cursor: default;
+    }
 }
 
 @media (max-width: 768px) {
