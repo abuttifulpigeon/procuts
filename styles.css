@@ -517,7 +517,7 @@ footer {
     right: 20px;
     width: 100px;
     height: 100px;
-    background-color: #a52a2a;
+    background-color: #000;
     border-radius: 10px;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -610,6 +610,14 @@ footer {
   .hidden {
     display: none !important;
   }
+
+@media (max-width: 1024px) {
+    .coupon-popup.expanded {
+        width: auto;
+        height: auto;
+        cursor: default;
+    }
+}
 
 @media (max-width: 768px) {
     .text-container {
@@ -732,11 +740,7 @@ footer {
         padding: 32px 20px;
     }
 
-    .coupon-popup.expanded {
-        width: max-content;
-        height: auto;
-        cursor: default;
-    }
+    
 }
 
 @media (max-width: 768px) {
