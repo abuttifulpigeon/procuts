@@ -107,6 +107,45 @@
         </div>
     </main>
 
+    <div class="coupon-popup" style="margin-right: 20px;">
+        <div class="coupon-label">$1 OFF COUPON</div>
+        <img src="/assets/img/coupon.png" alt="Coupon" class="coupon-image">
+        <button class="close-btn">×</button>
+        <button class="dismiss-btn">×</button>
+      </div>
+      
+      <script>
+      // Show coupon after scrolling
+      let scrollTimeout;
+      window.addEventListener('scroll', () => {
+        clearTimeout(scrollTimeout);
+        scrollTimeout = setTimeout(() => {
+          document.querySelector('.coupon-popup').classList.add('visible');
+        }, 300);
+      });
+      
+      // Handle coupon click
+      const coupon = document.querySelector('.coupon-popup');
+      const closeBtn = document.querySelector('.close-btn');
+      const dismissBtn = document.querySelector('.dismiss-btn');
+      
+      coupon.addEventListener('click', (e) => {
+        if (!coupon.classList.contains('expanded') && !e.target.classList.contains('dismiss-btn')) {
+          coupon.classList.add('expanded');
+        }
+      });
+      
+      closeBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        coupon.classList.remove('expanded');
+      });
+      
+      dismissBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        coupon.classList.add('hidden');
+      });
+      </script>
+
     <footer>
         <div style="display: inline;">
             <img class="footer-logo" src="/assets/img/procuts-logo.png">
