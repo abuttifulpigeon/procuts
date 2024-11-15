@@ -532,11 +532,14 @@ footer {
     transform: translateY(0);
   }
   
-  .coupon-popup.expanded {
-    width: 990px;
-    height: 640px;
+.coupon-popup.expanded {
+    width: 90%; /* Adjust the width for better responsiveness */
+    max-width: 480px; /* Optional max width */
+    max-height: 90vh; /* Limits the popup to 90% of the viewport height */
+    overflow-y: auto; /* Enables scrolling within the popup if the content exceeds max height */
     cursor: default;
-  }
+    padding: 20px; /* Optional padding for better spacing */
+}
   
   .coupon-label {
     position: absolute;
