@@ -116,10 +116,13 @@
 
     <div class="coupon-popup" style="margin-right: 20px;">
         <div class="coupon-label">$1 OFF COUPON</div>
-        <img src="/assets/img/coupon.png" alt="Coupon" class="coupon-image">
+        <a href="/assets/img/coupon.png" target="_blank">
+            <img src="/assets/img/coupon.png" alt="Coupon" class="coupon-image">
+        </a>
+        
         <button class="close-btn">×</button>
         <button class="dismiss-btn">×</button>
-      </div>
+    </div>
       
       <script>
       // Show coupon after scrolling
@@ -135,17 +138,6 @@
       const coupon = document.querySelector('.coupon-popup');
       const closeBtn = document.querySelector('.close-btn');
       const dismissBtn = document.querySelector('.dismiss-btn');
-      
-      coupon.addEventListener('click', (e) => {
-        if (!coupon.classList.contains('expanded') && !e.target.classList.contains('dismiss-btn')) {
-          coupon.classList.add('expanded');
-        }
-      });
-      
-      closeBtn.addEventListener('click', (e) => {
-        e.stopPropagation();
-        coupon.classList.remove('expanded');
-      });
       
       dismissBtn.addEventListener('click', (e) => {
         e.stopPropagation();
