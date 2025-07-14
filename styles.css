@@ -34,15 +34,15 @@ a:hover {
 }
 
 .hero-img-main {
-    background-image: url(/assets/img/haircuts/haircut-1.jpg);
+    background-image: url(/assets/img/haircuts/haircut-1.webp);
 }
 
 .footer-img-about {
-    background-image: url(/assets/img/haircuts/haircut-wide-1.jpg);
+    background-image: url(/assets/img/haircuts/haircut-wide-1.webp);
 }
 
 .hero-img-products {
-    background-image: url(/assets/img/products/shampoos.jpg);
+    background-image: url(/assets/img/products/shampoos.webp);
 }
 
 .hero-services .hero-content, .hero-alt .hero-content {
